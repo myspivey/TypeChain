@@ -53,7 +53,7 @@
     "web3": "0.20.x"
   },
   "scripts": {
-    "prepublish": "yarn build",
+    "prepare": "yarn build",
     "build": "rm -rf ./dist && tsc -p ./tsconfig.production.json",
     "postbuild": "chmod +x ./dist/cli.js",
     "lint": "yarn formatting && yarn tslint",
